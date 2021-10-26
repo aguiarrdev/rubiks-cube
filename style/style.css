@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: radial-gradient(rgb(7 8 21), rgb(0 0 0));
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+    background-position-x: center;
+  }
+  
+  #container {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+  }
+  
+  .box-area {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotate3d(1, 1, 0, 130deg);
+  }
+
+  .box-area-animation {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 6s linear infinite;
+  }
+  
+  .box {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #262626;
+  }
+  
+  
+  .grid-container {
+    height: 100%;
+    display: grid;
+    grid-gap: 0px;
+    padding: 0px;
+  }
+
+  .grid-line {
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+      'one two three';
+    grid-gap: 0px;
+    padding: 0px;
+
+  }
+  
+  .grid-line>div {
+    border: 5px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0;
+    font-size: 30px;
+  }
+
+  #box-back {
+    transform: translateX(-100px) translateY(-100px) translateZ(-100px);
+  }
+  
+  #box-front {
+    transform: translateX(-100px) translateY(-100px) translateZ(100px);
+  }
+  #box-right {
+    transform: translateY(-100px) rotateY(90deg);
+  }
+  
+  #box-left {
+    transform: translateY(-100px) translateX(-200px) rotateY(90deg);
+  }
+  
+  #box-top {
+    transform: translateX(-100px) translateY(-200px) rotateX(90deg);
+  }
+  
+  #box-bottom {
+    transform: translateX(-100px) rotateX(90deg);
+  }
+  
+  .bg-back {
+    background: rgb(217, 255, 0);
+  }
+  
+  .bg-right {
+    background: rgb(235, 145, 1);
+  }
+  
+  .bg-left {
+    background: rgb(245, 2, 2);
+  }
+  
+  .bg-top {
+    background: rgb(75, 255, 4);
+  }
+  
+  .bg-bottom {
+    background: rgb(0, 4, 246);
+  }
+  
+  .bg-front {
+    background: rgb(255, 255, 255);
+  }
+
+  .controllers {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+  }
+  .controllers input {
+    margin: 5px;
+    background-color: transparent;
+    color: #fff;
+    height: 35px;
+    width: 130px;
+    border: solid;
+    border-width: 1px;
+    border-image: linear-gradient(to right, red, green,blue );
+    border-image-slice: 1;
+  }
+  .controllers input:hover {
+    cursor: pointer;
+  }
+
+  .rotation-interval {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  

@@ -1,0 +1,23 @@
+{
+    "name": "rubiks-cube",
+    "version": "1.0.0",
+    "description": "Rubiks Cube",
+    "main": "index.js",
+    "repository": "https://github/aguiarr/rubiks-cube",
+    "author": "Matheus Aguiar",
+    "license": "GPL-3",
+    "devDependencies": {
+      "node-sass": "~4.13.1",
+      "parcel-bundler": "^1.12.5",
+      "sass": "^1.42.1"
+    },
+    "dependencies": {
+      "autoprefixer": "^9.6.5",
+      "postcss-loader": "^3.0.0",
+      "postcss-modules": "^1.4.1"
+    },
+    "scripts": {
+      "build": "parcel build ./script/* --public-url ./",
+      "dev": "parcel watch ./script/* --public-url ./"
+    }
+  }
